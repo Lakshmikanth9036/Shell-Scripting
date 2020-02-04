@@ -17,6 +17,7 @@ fi
 done
 echo $h $t
 headper=$(echo $h $t | awk '{ printf "%f", ($1*100)/($1+$2) }')
-echo $headper
+tailper=$(echo $t $h | awk '{ printf "%f", ($1*100)/($1+$2) }')
+echo $headper $tailper
 
 
